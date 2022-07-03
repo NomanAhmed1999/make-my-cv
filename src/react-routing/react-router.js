@@ -16,7 +16,7 @@ const ReactRouter = () => {
     return (
         <div>
             <Router>
-            <Header />
+                <Header />
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/templates" element={<Templates />} />

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 1500px;
+    background: black;
 }
 
 .header-fixed {
@@ -143,8 +143,8 @@ body.fixed .header-fixed .header-limiter nav {
 
 .home-container {
     width: 100%;
-    height: 100vh;
-    background: url("../../assects/job-bg.jpg");
+    height: 89.5vh;
+    // background: url("../../assects/job-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 1;
@@ -173,7 +173,6 @@ body.fixed .header-fixed .header-limiter nav {
 }
 
 .templates-theme-lg{
-    background: #363333;
     width: 100%;
     height: 71vh;
 }
@@ -184,20 +183,69 @@ body.fixed .header-fixed .header-limiter nav {
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: flex-end;
-    width: 100%;
+    width: 99%;
     height: 143px;
     border: 1px solid orangered;
-    min-width: 100%;
     overflow: auto;
 }
 
 .templates-cv-img{
-    width: 28%;
+    margin: 5%;
+    width: 23%;
     margin: 5% 0 0 0;
     height: 57vh;
+    cursor: pointer;
 }
 
 .templates-cv-sm{
     width: 100px;
-    height:130px;
+    height:100px;
+    margin: 13px;
+    border: 1px solid orangered;
+    cursor: pointer;
+}
+
+.templates-theme-review{
+    position: absolute;
+    top: -3px;
+    margin: 2%;
+    border: 1px solid orange;
+    background: black;
+    height: 95vh;
+    overflow: auto;
+    width: 700px;
+}
+
+.templates-cv-img-review{
+    margin: 1%;
+    width: 600px;
+    height: 900px;
+}
+
+.cross-icon{
+    position: fixed;
+    right: 23.5%;
+    color: red;
+    text-align: end;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+
+.style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgb(240, 233, 233);
+	background-color: #ffffff;
+}
+
+.style-3::-webkit-scrollbar
+{
+	width: 6px;
+    height: 6px;
+	background-color: #F5F5F5;
+}
+
+.style-3::-webkit-scrollbar-thumb
+{
+	background-color: #ff8000;
 }
