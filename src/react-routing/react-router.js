@@ -7,6 +7,7 @@ import {
 import Home from '../screens/home';
 import Header from '../components/header';
 import Templates from '../screens/templates';
+import CvView from '../screens/cv-view';
 import Form from '../screens/form';
 
 
@@ -21,6 +22,7 @@ const ReactRouter = () => {
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/templates" element={<Templates />} />
                     <Route exact path="/form" element={<Form />} />
+                    <Route exact path="/Cv-view" element={<CvView />} />
                 </Routes>
             </Router>
         </div>

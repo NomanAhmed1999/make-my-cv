@@ -101,7 +101,6 @@ body.fixed .header-fixed .header-limiter nav {
     padding: 20px 0;
     height: 75px;
   }
-
   .header-fixed .header-limiter h1 {
     float: none;
     margin: -8px 0 10px;
@@ -109,16 +108,13 @@ body.fixed .header-fixed .header-limiter nav {
     font-size: 24px;
     line-height: 1;
   }
-
   .header-fixed .header-limiter nav {
     line-height: 1;
     float: none;
   }
-
   .header-fixed .header-limiter nav a {
     font-size: 13px;
   }
-
   body.fixed .header-fixed {
     display: none;
   }
@@ -247,16 +243,94 @@ body.fixed .header-fixed .header-limiter nav {
 .form-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 1%;
 }
 .form-container .form-box1 {
-  width: 70%;
-  height: 89vh;
-  background: #ff8000;
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1%;
+  background: #dcdbe4;
+  overflow: auto;
+}
+.form-container .form-box1 .cv-container {
+  width: 90%;
+  height: 82vh;
+  overflow: auto;
+  border: 2px solid blue;
+  background: white;
+}
+.form-container .form-box1 .cv-container .cv-header {
+  background: #9d4909;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  height: 150px;
+}
+.form-container .form-box1 .cv-container .left-row {
+  text-align: start;
+  color: white;
+}
+.form-container .form-box1 .cv-container .left-row h2 {
+  margin: 0;
+  font-family: serif;
+}
+.form-container .form-box1 .cv-container .left-row p {
+  margin: 0;
+  font-family: inherit;
+}
+.form-container .form-box1 .cv-container .right-row {
+  text-align: start;
+  color: white;
+}
+.form-container .form-box1 .cv-container .right-row span {
+  font-weight: 700;
+  font-size: 18px;
+}
+.form-container .form-box1 .cv-container .right-row p {
+  margin: 0;
+}
+.form-container .form-box1 .cv-body h3 {
+  text-align: start;
+  margin: 4% 0px -1.8% 1%;
+  color: #9d4909;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+.form-container .form-box1 .cv-body p {
+  text-align: start;
+  margin: 0 0 0 2%;
+}
+.form-container .form-box1 .cv-body ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 120px;
+  text-align: start;
+}
+.form-container .form-box1 .cv-body .edu-h {
+  font-weight: 900;
+  font-size: 20px;
+}
+.form-container .form-box1 .cv-body .edu-field {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: inherit;
 }
 .form-container .form-box2 {
   width: 30%;
   height: 89vh;
   padding: 2%;
+  height: 85vh;
+  overflow: auto;
 }
 .form-container .form-box2 label {
   color: white;
