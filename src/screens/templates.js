@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 
 const Templates = () => {
     const [cvImages1, setCvImages1] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]);
@@ -83,26 +84,30 @@ const Templates = () => {
     const [imgOpen, setImgOpen] = useState(false);
     const [selectedImg, setSelectedImg] = useState('https://img.freepik.com/free-vector/modern-cv-template-with-photo_23-2148859009.jpg?w=2000');
 
-
+    const changeImg = (item) => {
+        setSelectedImg(item.src)
+    }
 
 
     return (
         <div className='templates-main-container'>
+            <h2 className='blue-color'>Choose Template</h2>
             <div className='templates-theme-lg'>
                 <img onClick={() => setImgOpen(!imgOpen)} className='templates-cv-img' src={selectedImg} />
+                <Link to="/form" state={{ test: "hello" }}><Button variant="primary" className="mx-2 blue-bg-color next-btn">Next</Button></Link>
             </div>
             {
                 imgOpen === true ?
                     <div className='templates-theme-review style-3'>
                         <p className='cross-icon'> <i className="fa fa-times-circle" aria-hidden="true" onClick={() => setImgOpen(!imgOpen)}></i></p>
-                        <img className='templates-cv-img-review' src='https://cdn-images.zety.com/images/zety/landings/templates/in/cv-template-concept@3x.png' />
+                        <img className='templates-cv-img-review' src={selectedImg} />
                     </div>
                     :
                     <div className='templates-theme-temp style-3'>
                         {cvImages.map((key, i) => {
                             return (
                                 <div key={key.id}>
-                                    <img className='templates-cv-sm' src={key.src} />
+                                    <img className='templates-cv-sm' src={key.src} onClick={() => changeImg(key)} />
                                 </div>
                             )
                         })}

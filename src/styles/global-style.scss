@@ -6,7 +6,7 @@ body {
 
 .header-fixed {
     background-color: #292c2f;
-    box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ff8000;
     padding: 20px 40px;
     height: 80px;
     color: #ffffff;
@@ -192,7 +192,7 @@ body.fixed .header-fixed .header-limiter nav {
 .templates-cv-img{
     margin: 5%;
     width: 23%;
-    margin: 5% 0 0 0;
+    margin: 1% 0 0 0;
     height: 57vh;
     cursor: pointer;
 }
@@ -223,8 +223,6 @@ body.fixed .header-fixed .header-limiter nav {
 }
 
 .cross-icon{
-    position: fixed;
-    right: 23.5%;
     color: red;
     text-align: end;
     margin: 0 5px;
@@ -248,4 +246,38 @@ body.fixed .header-fixed .header-limiter nav {
 .style-3::-webkit-scrollbar-thumb
 {
 	background-color: #ff8000;
+}
+
+.blue-color{
+    color: #5383d3;
+}
+.blue-bg-color{
+    background: #2e5ec9;
+}
+.next-btn{
+    position: absolute;
+    bottom: 24%;
+    right: 1%;
+}
+.form-container{
+    display: flex;
+    flex-direction: row;
+
+
+
+.form-box1{
+    width: 70%;
+    height: 89vh;
+    background: #ff8000;
+}
+
+.form-box2{
+    width: 30%;
+    height: 89vh;
+    padding: 2%;
+
+    label{
+        color: white;
+    }
+}
 }

@@ -10,7 +10,7 @@ const Home = () => {
         <div className='home-container'>
 
             <h2 className='home-main-heading'>create an attractive and professional CV and be ready for your dream job</h2>
-            <Link to="/form"><Button variant="success" className="mx-2">Create CV</Button></Link>
+            <Link to="/templates"><Button variant="primary" className="mx-2 blue-bg-color">Create CV</Button></Link>
         </div>
     )
 }
